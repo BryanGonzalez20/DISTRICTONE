@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DISTRICT ONE</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script src="js/cookiemanager.js"></script>
+  <script src="js/Login.js"></script>
+  <script>
+    function register() {
+
+      let x = new Login();
+
+      if (x.register(userid.value, password.value)) {
+        message.innerHTML = "Registration Successfull";
+        location.href = "login.html";// redirect 
+      } else {
+        message.innerHTML = "ERROR: User already exists";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1>
+            <a href="home.html">DISTRICT <span class="logo_colour">ONE</span></a>
+          </h1>
+          <h2>The World Is Yours</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+
+          <script src=js/menu.js></script>
+
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <h1>Latest News</h1>
+        <h4>12 Days of Giftmas</h4>
+        <h5>December 13th, 2023</h5>
+        <p>Money back on a gift you just purchased? Holy Christmas! District One is offering a chance for you to win
+          back the money you spend with us. For 12 days, starting December 13th to December 24th, our 12 Days of Giftmas
+          offers a chance for you to be reimbursed for the product you buy with us up to $500 USD. <br /><a
+            href="#">Read more</a>
+        </p>
+        <h1>Useful Links</h1>
+        <ul>
+          <li><a href="#">link 1</a></li>
+          <li><a href="#">link 2</a></li>
+          <li><a href="#">link 3</a></li>
+          <li><a href="#">link 4</a></li>
+        </ul>
+        <h1>Search</h1>
+        <form method="post" action="#" id="search_form">
+          <p>
+            <input class="search" type="text" name="search_field" value="Enter keywords....." />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px" src="style/search.png"
+              alt="Search" title="Search" />
+          </p>
+        </form>
+      </div>
+      <div id="content">
+        <h1>Register</h1>
+        <p>
+          Below is an example of how a contact form might look with this
+          template:
+        </p>
+        <form action="#" method="post">
+          <div class="form_settings">
+            <p>
+              <span>Username:</span><input class="contact" type="text" name="userid" value="" id="userid" />
+            </p>
+            <p>
+              <span>Password:</span><input class="contact" type="text" id="password" />
+            </p>
+            <p style="padding-top: 15px">
+              <span>&nbsp;</span><input class="submit" type="button" name="contact_submitted" value="submit"
+                onclick="register();" />
+            </p>
+          </div>
+        </form>
+        <p>
+          <br /><br />
+        <div id="message"></div>
+        </p>
+      </div>
+      <a href="login.html"> LOGIN</a>
+    </div>
+    <div id="footer">
+      <p>
+        <a href="home.html">Home</a> | <a href="examples.html">Examples</a> |
+        <a href="page.html">A Page</a> |
+        <a href="another_page.html">Another Page</a> |
+        <a href="contact.html">Contact Us</a>
+      </p>
+      <p>
+        Copyright &copy; simplestyle_5 |
+        <a href="http://validator.w3.org/check?uri=referer">HTML5</a> |
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> |
+        <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a>
+      </p>
+    </div>
+  </div>
+  <div style="text-align: center; font-size: 0.75em">
+    Design downloaded from
+    <!-- Registration link -->
+    <a href="http://www.freewebtemplates.com/">free website templates</a>.
+  </div>
+</body>
+
+</html>
